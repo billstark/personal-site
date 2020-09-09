@@ -1,0 +1,40 @@
+@import 'variable.scss';
+
+.full-height-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .container {
+    max-width: 1024px;
+    width: 100%;
+  }
+}
+
+.normal-height-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .container {
+    max-width: 1024px;
+    width: 100%;
+  }
+}
+
+.temp-mobile-holder {
+  display: none;
+}
+
+@media (max-width: $laptop-breakpoint) {
+  .desktop-container {
+    display: none;
+  }
+
+  .temp-mobile-holder {
+    display: block!important;
+  }
+}
