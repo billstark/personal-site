@@ -25,16 +25,16 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
-    };
+    }
   },
   computed: {},
-  ready() {},
-  attached() {},
+  ready () {},
+  attached () {},
   methods: {},
   components: {}
-};
+}
 
 </script>
 

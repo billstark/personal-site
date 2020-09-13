@@ -16,60 +16,59 @@
         </div>
       </div>
     </div>
-  </div>  
+  </div>
 </template>
 
 <script>
-import Cube from './../common/cube';
+import Cube from './../common/cube'
 
-var REQUEST_CATEGORIES_END_POINT = 'http://localhost:3000/gallery/categories';
-var SLASH = '/';
-var ID_KEY = 'id';
-var IMAGES_KEY = 'images';
-  
+var REQUEST_CATEGORIES_END_POINT = 'http://localhost:3000/gallery/categories'
+var SLASH = '/'
+var ID_KEY = 'id'
+var IMAGES_KEY = 'images'
+
 export default {
-  data() {
+  data () {
     return {
       categories: [],
       imageGroups: [],
       loading: true,
       loadedCount: 0
-    };
+    }
   },
-  created: function() {
-    this.getAllCategories();
+  created: function () {
+    this.getAllCategories()
   },
   computed: {},
-  ready() {},
-  attached() {},
+  ready () {},
+  attached () {},
   methods: {
 
-    getAllCategories: function() {
+    getAllCategories: function () {
       this.$http.get(REQUEST_CATEGORIES_END_POINT).then(response => {
-        this.categories = response.body;
-        this.getAllImages();
-      });
+        this.categories = response.body
+        this.getAllImages()
+      })
     },
 
-    getAllImages: function() {
+    getAllImages: function () {
       for (var i = 0; i < this.categories.length; i++) {
-
         this.$http.get(REQUEST_CATEGORIES_END_POINT + SLASH + this.categories[i][ID_KEY] + SLASH + IMAGES_KEY).then(response => {
-            this.imageGroups.push(response.body);
-            this.loadedCount++;
-            if (this.loadedCount == Object.keys(this.categories).length) {
-              this.loading = false;
-            }
-        });
+          this.imageGroups.push(response.body)
+          this.loadedCount++
+          if (this.loadedCount === Object.keys(this.categories).length) {
+            this.loading = false
+          }
+        })
       }
     }
 
   },
   components: {
-    'cube': Cube
+    cube: Cube
   },
   metaInfo: {
-    title: "World In Square - Gallery"
+    title: 'World In Square - Gallery'
   }
 }
 
@@ -105,6 +104,5 @@ export default {
     width: 500px;
   }
 }
-
 
 </style>

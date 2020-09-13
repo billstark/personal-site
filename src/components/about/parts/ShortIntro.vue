@@ -10,11 +10,11 @@
             <p class="forward">
               <i>"The traveller, the painter,<br>
               guardian of the night, <br>
-              a student of Computer Science."<br></i>            
+              a student of Computer Science."<br></i>
             </p>
 
             <p>
-              I was born in <b>Chongqing, China</b>. I am currently an undergraduate from <br> 
+              I was born in <b>Chongqing, China</b>. I am currently an undergraduate from <br>
               <b>National University of Singapore</b>, majoring in <b>Computer Science</b>. Apart <br>
               from <b>coding</b> till mid-night, I am kin of <b>travelling</b> and <b>photography</b>. <br>
               I intend to be an excellent <b>software engineer</b>.
@@ -27,16 +27,16 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
-    };
+    }
   },
   computed: {},
-  ready() {},
-  attached() {},
+  ready () {},
+  attached () {},
   methods: {},
   components: {}
-};
+}
 </script>
 
 <style lang="scss" scoped>
@@ -54,7 +54,7 @@ export default {
   .short-intro-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;  
+    justify-content: flex-end;
   }
 }
 

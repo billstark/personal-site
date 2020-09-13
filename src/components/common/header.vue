@@ -21,7 +21,7 @@
             </li>
             <li>projects</li>
             <li>thoughts</li>
-            <li v-bind:class="{ active: currentPath == '/main/gallery' }"> 
+            <li v-bind:class="{ active: currentPath == '/main/gallery' }">
               <router-link :to="{ path: '/main/gallery' }">gallery</router-link>
             </li>
           </ul>
@@ -34,18 +34,18 @@
 <script>
 
 export default {
-  data() {
+  data () {
     return {
-      title: "About",
-      mainPath: "/"
-    };
+      title: 'About',
+      mainPath: '/'
+    }
   },
   computed: {
-    currentPath() {
-      return this.$route.path;
+    currentPath () {
+      return this.$route.path
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
