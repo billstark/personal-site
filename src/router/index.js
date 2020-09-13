@@ -40,4 +40,4 @@ export default new Router({
       component: Test
     }
   ]
-});
+})
