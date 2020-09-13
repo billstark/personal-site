@@ -6,7 +6,7 @@
       </div>
       <div class="summary">
         <p>
-          I have six-months of working experience as a web application software engineer. Most of my work 
+          I have six-months of working experience as a web application software engineer. Most of my work
           includes both front-end and backend development.
         </p>
       </div>
@@ -41,17 +41,17 @@
 <script >
 
 export default {
-  data() {
+  data () {
     return {
-    };
+    }
   },
   computed: {},
-  ready() {},
-  attached() {},
+  ready () {},
+  attached () {},
   methods: {},
   components: {
   }
-};
+}
 
 </script>
 
@@ -116,5 +116,5 @@ export default {
     }
   }
 }
-  
+
 </style>

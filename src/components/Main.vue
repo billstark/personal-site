@@ -22,7 +22,7 @@ import Mholder from './common/mholder'
 export default {
   data () {
     return {
-    };
+    }
   },
   computed: {},
   ready () {},

@@ -5,7 +5,7 @@
       <div class="banner-content container">
         <h1>YANG ZHUOHAN</h1>
         <h4>Software Engineer & Designer</h4>
-        <a class="download-resume" 
+        <a class="download-resume"
            href="https://www.dropbox.com/s/r49vsty8d32ej77/Yang%20Zhuohan%20CV.pdf?dl=0"
            target="_blank">
           <div class="download-button">
@@ -24,20 +24,20 @@
 </template>
 
 <script>
-import ShortIntro from './parts/ShortIntro';
-import Abilities from './parts/Abilities';
-import Experiences from './parts/Experiences';
-import Contact from './parts/Contact';
-import Foote from './../common/footer';
+import ShortIntro from './parts/ShortIntro'
+import Abilities from './parts/Abilities'
+import Experiences from './parts/Experiences'
+import Contact from './parts/Contact'
+import Foote from './../common/footer'
 
 export default {
-  data() {
+  data () {
     return {
-    };
+    }
   },
   computed: {},
-  ready() {},
-  attached() {},
+  ready () {},
+  attached () {},
   methods: {},
   components: {
     ShortIntro,
@@ -47,9 +47,9 @@ export default {
     Foote
   },
   metaInfo: {
-    title: "World In Square - About"
+    title: 'World In Square - About'
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
@@ -138,7 +138,7 @@ export default {
 
         &:hover {
           background-color: $shell;
-          color: $blackboard;  
+          color: $blackboard;
         }
       }
     }

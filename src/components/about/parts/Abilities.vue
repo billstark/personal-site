@@ -34,7 +34,7 @@
             <div class="description">
               <h3>Efficiency</h3>
               <p>
-                The heavy workload forced me to learn to manage my time well. I have developed a general 
+                The heavy workload forced me to learn to manage my time well. I have developed a general
                 priciple on how to deal with multiple tasks; first finish all tasks with equal efforts
                 quickly and spend more time on those which that have more room for improvement.
               </p>
@@ -47,8 +47,8 @@
             <div class="description">
               <h3>Open mind</h3>
               <p>
-                I am always trying to be exposed to new things not only in my study but also in my life. 
-                That is indeed the reason why I took workload-heavy modules, enjoyed the suffering and 
+                I am always trying to be exposed to new things not only in my study but also in my life.
+                That is indeed the reason why I took workload-heavy modules, enjoyed the suffering and
                 the reason why I want to study abroad, work abroad, be involved into different cultures
                 and environments.
               </p>
@@ -64,16 +64,16 @@
 <script>
 
 export default {
-  data() {
+  data () {
     return {
-    };
+    }
   },
   computed: {},
-  ready() {},
+  ready () {},
   attached() {},
   methods: {},
   components: {}
-};
+}
 </script>
 
 <style lang="scss" scoped>
@@ -146,5 +146,5 @@ export default {
     }
   }
 }
-  
+
 </style>
