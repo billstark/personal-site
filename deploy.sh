@@ -13,8 +13,8 @@ git clone https://$GITHUB_TOKEN@github.com/billstark/billstark.github.io.git rel
 echo 'copying files'
 yes | cp -rf dist/* release-repo/
 
-# git config --global user.email billstark1996@rakuten.com
-# git config --global user.name bill-ci
+git config --global user.email billstark1996@rakuten.com
+git config --global user.name bill-ci
 
 echo 'commiting changes repo'
 cd release-repo
