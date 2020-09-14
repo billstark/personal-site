@@ -66,7 +66,7 @@ export default {
 
 // for top banner
 .top-banner {
-  background-color: $sumi;
+  background-color: $keshizumi;
 
   &::before {
     content: "";
@@ -84,7 +84,7 @@ export default {
     left: 0px;
     right: 0px;
     height: calc(100vh - 100px);
-    background-color: #000;
+    background-color: $keshizumi;
     opacity: .52;
     z-index: 1;
   }

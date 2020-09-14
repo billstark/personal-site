@@ -6,7 +6,7 @@ set -e
 # build
 echo 'running release build'
 npm install -g @vue/cli@latest
-npm run build
+./node_modules/.bin/vue-cli-service build
 
 echo 'cloning repo'
 git clone https://$GITHUB_TOKEN@github.com/billstark/billstark.github.io.git release-repo
