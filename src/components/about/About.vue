@@ -5,13 +5,14 @@
       <div class="banner-content container">
         <h1>YANG ZHUOHAN</h1>
         <h4>Data Engineer & Designer</h4>
-        <a class="download-resume"
-           href="https://www.dropbox.com/s/7z75wz5h206kb0r/Yang%20Zhuohan%20resume.pdf?dl=0"
+        <div class="download-resume">
+          <a href="https://www.dropbox.com/s/7z75wz5h206kb0r/Yang%20Zhuohan%20resume.pdf?dl=0"
            target="_blank">
-          <div class="download-button">
-            resume.download
-          </div>
-        </a>
+            <div class="download-button">
+              cv.download
+            </div>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -65,7 +66,7 @@ export default {
 
 // for top banner
 .top-banner {
-  background-color: #000;
+  background-color: $sumi;
 
   &::before {
     content: "";
@@ -74,7 +75,7 @@ export default {
     min-width: 1024px;
     height: 100vh;
     z-index: 1;
-    background-image: url("../../assets/img/shattered.png");
+    background-image: url("../../assets/img/inspiration-geometry.png");
     opacity: .7;
   }
 
@@ -126,9 +127,9 @@ export default {
 
       .download-button {
         text-align: center;
-        padding: 7px 20px;
+        padding: 10px 20px;
         color: $shell;
-        border: 1px solid $shell;
+        border: 1.5px solid $shell;
         letter-spacing: .5px;
         background-color: transparent;
         width: 140px;

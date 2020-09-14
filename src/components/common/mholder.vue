@@ -48,7 +48,7 @@ export default {
     bottom: 0px;
     right: 0px;
     z-index: 1;
-    background-image: url("../../assets/img/shattered.png");
+    background-image: url("../../assets/img/inspiration-geometry.png");
     opacity: .7;
   }
 

@@ -1,17 +1,5 @@
 <template lang="html">
   <div class="header-container">
-<!--     <vue-particles
-      class="particles"
-      color="#76323F"
-      linesColor="#333"
-      :particlesNumber="200"
-      :particleSize="2"
-      :moveSpeed="1"
-      :lineLinked="false"
-      :hoverEffect="false"
-      :clickEffect="false"
-    >
-    </vue-particles> -->
     <div class="header">
       <div class="header-items">
         <div class="item-list">
@@ -19,11 +7,11 @@
             <li v-bind:class="{ active: currentPath == '/main/about' }">
               <router-link :to="{ path: '/main/about' }">about</router-link>
             </li>
-            <li>projects</li>
-            <li>thoughts</li>
+            <!-- <li>projects</li> -->
             <li v-bind:class="{ active: currentPath == '/main/gallery' }">
               <router-link :to="{ path: '/main/gallery' }">gallery</router-link>
             </li>
+            <li>thoughts</li>
           </ul>
         </div>
       </div>
