@@ -66,7 +66,7 @@ export default {
 
 // for top banner
 .top-banner {
-  background-color: $keshizumi;
+  background-color: $sumi;
 
   &::before {
     content: "";

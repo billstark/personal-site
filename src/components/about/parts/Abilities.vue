@@ -7,9 +7,7 @@
       <div class="body">
         <div class="summary">
           <p>
-            In this two and half years of study, I have accomplished what I intended to do. Following
-            Professor Ben Leong's "Path of Pain", I survived from the heavy workload and indeed, have
-            learnt a lot.
+            Finished 4 years of study at National University of Singapore, I started working as a Data Engineer
           </p>
         </div>
         <div class="accomplishments">

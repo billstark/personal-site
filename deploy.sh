@@ -5,7 +5,7 @@ set -e
 
 # build
 echo 'running release build'
-npm install -g @vue/cli
+npm install @vue/cli
 ls ./node_modules/.bin
 ./node_modules/.bin/vue-cli-service build
 
