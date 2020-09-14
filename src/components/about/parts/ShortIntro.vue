@@ -8,16 +8,13 @@
           </div>
           <div class="intro">
             <p class="forward">
-              <i>"The traveller, the painter,<br>
-              guardian of the night, <br>
-              a student of Computer Science."<br></i>
+              <i>"The traveller, the photographer,<br>
+              the gamer, guardian of the night, <br>
+              a Data Engineer at Rakuten."<br></i>
             </p>
 
-            <p>
-              I was born in <b>Chongqing, China</b>. I am currently an undergraduate from <br>
-              <b>National University of Singapore</b>, majoring in <b>Computer Science</b>. Apart <br>
-              from <b>coding</b> till mid-night, I am kin of <b>travelling</b> and <b>photography</b>. <br>
-              I intend to be an excellent <b>software engineer</b>.
+            <p class="details">
+              I am immersed in being a spectator of the world. Taking my steps to measure the lands, projecting down shadows of the views, hanging around inside wonderlands and digging to myths in different game worlds... I love collecting "Data" that enriches my life.
             </p>
           </div>
         </div>
@@ -87,6 +84,12 @@ export default {
       margin-top: 0px;
       line-height: 25px;
       font-size: 14px;
+    }
+
+    .details {
+      width: 360px;
+      line-height: 22px;
+      font-size: 16px;
     }
   }
 }

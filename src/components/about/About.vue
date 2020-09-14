@@ -4,9 +4,9 @@
     <div class="top-banner full-height-container">
       <div class="banner-content container">
         <h1>YANG ZHUOHAN</h1>
-        <h4>Software Engineer & Designer</h4>
+        <h4>Data Engineer & Designer</h4>
         <a class="download-resume"
-           href="https://www.dropbox.com/s/r49vsty8d32ej77/Yang%20Zhuohan%20CV.pdf?dl=0"
+           href="https://www.dropbox.com/s/7z75wz5h206kb0r/Yang%20Zhuohan%20resume.pdf?dl=0"
            target="_blank">
           <div class="download-button">
             resume.download
