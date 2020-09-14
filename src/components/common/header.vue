@@ -11,7 +11,8 @@
             <li v-bind:class="{ active: currentPath == '/main/gallery' }">
               <router-link :to="{ path: '/main/gallery' }">gallery</router-link>
             </li>
-            <li>thoughts</li>
+            <li><a href="https://medium.com/@yangzhuohan1996"
+           target="_blank">thoughts</a></li>
           </ul>
         </div>
       </div>
