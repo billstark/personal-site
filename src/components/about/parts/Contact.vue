@@ -41,7 +41,7 @@ export default {
 @import '../../../assets/sass/variable.scss';
 
 .contact-info {
-  background-color: $choco;
+  background-color: #1b262c;
   .i-hear-from {
     text-align: center;
     color: $paper;
@@ -57,7 +57,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: $paper;
+    color: #bbe1fa;
     opacity: .4;
     display: flex;
     font-weight: 300;
@@ -91,7 +91,7 @@ export default {
         background-color: $paper;
         opacity: 1;
         a {
-          color: $choco;
+          color: #1b262c;
         }
       }
     }

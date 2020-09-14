@@ -43,7 +43,7 @@ export default {
 @import '../../assets/sass/variable.scss';
 
 .footer-container {
-  background-color: $choco;
+  background-color: #1b262c;
 }
 
 .footer-content {
