@@ -5,6 +5,7 @@ set -e
 
 # build
 echo 'running release build'
+npm install -g @vue/cli@latest
 npm run build
 
 echo 'cloning repo'

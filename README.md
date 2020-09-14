@@ -1,5 +1,6 @@
 # Personal Site
 
+[![Build Status](https://travis-ci.org/billstark/personal-site.svg?branch=master)](https://travis-ci.org/billstark/personal-site)
 The code part of my own website.
 
 ## Project setup
