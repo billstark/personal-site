@@ -11,27 +11,37 @@
         </p>
       </div>
       <div class="experience-item">
-        <div class="company-logo">
-          <img src="../../../assets/img/cvwo.png" alt="">
-        </div>
-        <div class="description">
-          <h3>May 2016 - July 2016</h3>
-          <p>
-            Took part in Computing for Voluntary Welfare Organisations during the first summer vacation in the university. Participated in the whole process of developing a website for Lions Befrienders, particularly developed info/referral record and home visit record, implemented typeahead, file attachement and version control. During the process, I have got familiar with the Model-View-Controller architectural pattern as well as the Ruby on Rails framework. In addition, I have learnt some ideas of code maintenance and database design. <br>
-          </p>
-          <a href="http://www.comp.nus.edu.sg/~vwo/projects/2016-lbsa.html" target="_blank">Read more</a>
-        </div>
-      </div>
-      <div class="experience-item">
-        <div class="company-logo">
+        <div class="company-logo visenze">
           <img src="../../../assets/img/visenze.png" alt="">
         </div>
         <div class="description">
           <h3>May 2017 - July 2017</h3>
           <p>
-            Worked as a full-stack web developer at ViSenze for 3 months. During the internship I got familiar with AngularJS, Python, Java Spring and Jenkins. I learnt the basic development cycle of small projects. I helped with backend maintainess, continuous integration, UI design & implementation and some of the user experience testing. I was well integrated into the working environment and really enjoyed the 3-month internship experience.
+            Worked as a full-stack web developer at ViSenze for 3 months. During the internship I got familiar with AngularJS, Python, Java Spring and Jenkins. I learnt the basic development cycle of small projects. I helped with backend maintainess, continuous integration, UI design & implementation and some of the user experience testing.
           </p>
           <a href="http://www.weardex.com" target="_blank">Show case</a>
+        </div>
+      </div>
+      <div class="experience-item">
+        <div class="company-logo rakuten-viki">
+          <img src="../../../assets/img/viki_logo.png" alt="">
+        </div>
+        <div class="description">
+          <h3>May 2018 - Nov 2018</h3>
+          <p>
+            Worked as a backend developer at Rakuten Viki for 7 months. During the internship I migrated a small proxy project written in Ruby to Golang. Created a Golang service for static meta data from scratch, which supports basic CRUD functionalities. Golang (Go-kit), Google Cloud Platform, PostgreSQL, shell script and Circle-CI were used. In addition, created Markov model and visualization tools to analyze user behaviors. Elastic search, Python (Numpy) and Vue.js were used.
+          </p>
+        </div>
+      </div>
+      <div class="experience-item">
+        <div class="company-logo rakuten">
+          <img src="../../../assets/img/rakuten.png" alt="">
+        </div>
+        <div class="description">
+          <h3>July 2019 - Now</h3>
+          <p>
+            Working as a data engineer at Rakuten Asia. Started with data pipeline development with Spark, Kafka, Dataset Registry, Kafka Connect, Vault. Optimised the existing pipelines with efficiency and resource usage. Lead the proof of concepts of Rakuten US Bank Data Platform. Worked with Apache Beam (Dataflow), Cloud Build, Secret Management API, Cloud Composer etc. to build data pipelines (including CI/CD) on Google Cloud Platform from scratch to support the fundamental data processing requirements. Worked closely with our client Rakuten Viki, Created public API (with load testing & monitoring) using Akka for processed data access. Made use of Alluxio to create data replication tool which replicates data from HDFS to GCS on k8s environment.<br>
+          </p>
         </div>
       </div>
     </div>
@@ -63,7 +73,7 @@ export default {
   background-color: $paper;
   .i-worked {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 60px;
     margin-bottom: 20px;
     font-family: 'GT-Walsheim';
     font-size: 30px;
@@ -90,6 +100,18 @@ export default {
       img {
         width: 200px;
       }
+    }
+
+    .visenze {
+      margin-top: -4px;
+    }
+
+    .rakuten-viki {
+      margin-top: 5px;
+    }
+
+    .rakuten {
+      margin-top: 10px;
     }
 
     .description {

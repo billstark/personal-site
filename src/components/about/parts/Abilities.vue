@@ -7,7 +7,7 @@
       <div class="body">
         <div class="summary">
           <p>
-            Finished 4 years of study at National University of Singapore, I started working as a Data Engineer
+            I am a person that can always adopts to new environments quickly. I love solving problems, love taking challenges and love new technologies.
           </p>
         </div>
         <div class="accomplishments">
@@ -16,12 +16,9 @@
               <font-awesome-icon icon="code" size="2x"></font-awesome-icon>
             </div>
             <div class="description">
-              <h3>Good code</h3>
+              <h3>Code</h3>
               <p>
-                I have taken three software-engineering-based courses and during the development I realized
-                the importance of good code quality. Comments, variables naming, encapsulation, unit testing,
-                continuous integration and structure designs, all of these would decide how the projects go
-                and how good it will be.
+                5 year plus development experience has tought me the importance of best practices, code quality and documentations. "Think first, have a clear design and then code" has always been the guide for me during work; I am always striving to provide reusable, sustainable and efficient code.
               </p>
             </div>
           </div>
@@ -30,11 +27,9 @@
               <font-awesome-icon icon="space-shuttle" size="2x"></font-awesome-icon>
             </div>
             <div class="description">
-              <h3>Efficiency</h3>
+              <h3>Better and even better</h3>
               <p>
-                The heavy workload forced me to learn to manage my time well. I have developed a general
-                priciple on how to deal with multiple tasks; first finish all tasks with equal efforts
-                quickly and spend more time on those which that have more room for improvement.
+                Not just to finish the work, but also consider better solutions, less resources usages, faster speed, better follow-ups, monitoring, fault-tolerance, backups... Work can be done easily but was selden polished to be perfect. I am not able to achieve perfection but I know how to and is always aiming to be perfect.
               </p>
             </div>
           </div>
@@ -45,10 +40,7 @@
             <div class="description">
               <h3>Open mind</h3>
               <p>
-                I am always trying to be exposed to new things not only in my study but also in my life.
-                That is indeed the reason why I took workload-heavy modules, enjoyed the suffering and
-                the reason why I want to study abroad, work abroad, be involved into different cultures
-                and environments.
+                Technologies changes quickly and as a programmer, I am always open to new things. Eager to learn about the pros and cons of different tech stacks and considering carefully with requirements makes me an adoptive developer. Open mind helps me enhance my knowledge base on the way of pursuing perfection.
               </p>
             </div>
           </div>
@@ -79,7 +71,17 @@ export default {
 @import '../../../assets/sass/variable.scss';
 
 .ability-info {
-  background-color: $choco;
+  background-color: #3f4441;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-width: 1024px;
+    height: 100vh;
+    z-index: 0;
+    background-image: url("../../../assets/img/xv.png");
+    opacity: .7;
+  }
   .ability-info-container {
     .i-have {
       text-align: center;
@@ -107,11 +109,11 @@ export default {
     p {
       text-align: center;
       width: 600px;
-      font-size: 14px;
+      font-size: 15px;
     }
   }
   .accomplishments {
-    margin-top: 70px;
+    margin-top: 120px;
     display: flex;
     flex-direction: row;
     .accomp-item {
@@ -120,7 +122,7 @@ export default {
       flex-direction: row;
 
       .icon {
-        color: rgba(164, 41, 58, 1);
+        color: #ba7967;
         font-weight: bold;
       }
 
@@ -138,7 +140,7 @@ export default {
           opacity: .6;
           width: 250px;
           font-weight: 300;
-          font-size: 13px;
+          font-size: 14px;
         }
       }
     }

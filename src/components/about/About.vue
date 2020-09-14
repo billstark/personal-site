@@ -66,7 +66,7 @@ export default {
 
 // for top banner
 .top-banner {
-  background-color: $sumi;
+  background-color: #383e56;
 
   &::before {
     content: "";
@@ -84,7 +84,7 @@ export default {
     left: 0px;
     right: 0px;
     height: calc(100vh - 100px);
-    background-color: $keshizumi;
+    background-color: #557571;
     opacity: .52;
     z-index: 1;
   }
@@ -108,12 +108,12 @@ export default {
       letter-spacing: 10px;
       font-size: 70px;
       font-weight: 500;
-      color: $tan;
+      color: #f69e7b;
     }
 
     h4 {
       margin-top: 10px;
-      color: $sand;
+      color: #eedad1;
       letter-spacing: 3px;
       font-weight: 300;
       font-size: 22px;
@@ -128,8 +128,8 @@ export default {
       .download-button {
         text-align: center;
         padding: 10px 20px;
-        color: $shell;
-        border: 1.5px solid $shell;
+        color: #d4b5b0;
+        border: 1.5px solid #d4b5b0;
         letter-spacing: .5px;
         background-color: transparent;
         width: 140px;
@@ -138,8 +138,8 @@ export default {
         transition: background-color .3s ease;
 
         &:hover {
-          background-color: $shell;
-          color: $blackboard;
+          background-color: #d4b5b0;
+          color: #383e56;
         }
       }
     }
