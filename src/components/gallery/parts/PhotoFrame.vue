@@ -1,31 +1,31 @@
 <template>
-  <div class="test-container">
-    <div class="wrapper">
-      <div class="photo-frame hide-photo-1">
-        <div class="photo-image">
-          <img src="../assets/img/gallery/japan/IMG_4639-min.jpg">
-        </div>
-      </div>
-      <div class="photo-frame hide-photo-2">
-        <div class="photo-image">
-          <img src="../assets/img/gallery/japan/IMG_5028-min.jpg">
-        </div>
-      </div>
+  <div class="photo-frame">
+    <div class="photo-image">
+      <img :src=photo>
     </div>
   </div>
 </template>
 
 <script>
-
 export default {
-  components: {
+  data () {
+    return {
+      photo: require('@/assets/img/gallery/' + this.imageUrl)
+    }
+  },
+  name: 'PhotoFrame',
+  props: {
+    imageUrl: {
+      type: String,
+      required: true
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/sass/common.scss';
-@import '../assets/sass/variable.scss';
+@import '../../../assets/sass/common.scss';
+@import '../../../assets/sass/variable.scss';
 
 .test-container {
   background-color: $paper;

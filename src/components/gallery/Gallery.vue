@@ -1,71 +1,70 @@
 <template lang="html">
   <div>
-    <transition name="fade">
+    <!-- <transition name="fade">
       <div v-if="loading" class="loading-cube">
         <cube class="cube" color="#565656"></cube>
         <p>Loading...</p>
       </div>
-    </transition>
-    <div v-if="!loading" class="normal-height-container gallery-container">
+    </transition> -->
+    <div class="normal-height-container gallery-container">
       <div class="container">
-        <div v-bind:key="imageGroup['id']" v-for="imageGroup in imageGroups">
-          <h3>{{ imageGroup['category'] }}</h3>
-          <div v-bind:key="image['id']" v-for="image in imageGroup['images']" style="display: inline-block">
-            <img v-bind:src="image['url']">
+        <div class="china">
+          <div class="chongqing-wrapper">
+            <h1>Chongqing, my hometown.</h1>
+            <p>I was born in Chongqing and raised in Chongqing. There were loads of memories left behind.</p>
+            <div class="chongqing">
+              <div class="chongqing-view-wrapper">
+                <div class="chongqing-view">
+                  <photo-frame class="views-postcard" image-url="chongqing/hongyadong.jpeg"></photo-frame>
+                  <div class="chongqing-view-des-wrapper">
+                    <h3>Scenery</h3>
+                    <p>this is some place holder this is some place holder this is some place holder this is some place holder this is some place holder</p>
+                  </div>
+                </div>
+              </div>
+              <div class="school-wrapper">
+                <div class="school">
+                  <photo-frame class="friends-postcard" image-url="chongqing/IMG_3138-min.jpg"></photo-frame>
+                  <div class="chongqing-friends-des-wrapper">
+                    <h3>Friends</h3>
+                    <p>this is some place holder this is some place holder this is some place holder this is some place holder this is some place holder</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="neimenggu"></div>
+          <div class="xiamen"></div>
         </div>
+        <div class="singapore"></div>
+        <div class="japan"></div>
+        <div class="canada"></div>
+        <div class="norway"></div>
+        <div class="iceland"></div>
+        <div class="germany"></div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Cube from './../common/cube'
-
-var REQUEST_CATEGORIES_END_POINT = 'http://localhost:3000/gallery/categories'
-var SLASH = '/'
-var ID_KEY = 'id'
-var IMAGES_KEY = 'images'
+import PhotoFrame from './parts/PhotoFrame'
 
 export default {
   data () {
     return {
       categories: [],
       imageGroups: [],
-      loading: true,
       loadedCount: 0
     }
-  },
-  created: function () {
-    this.getAllCategories()
   },
   computed: {},
   ready () {},
   attached () {},
   methods: {
-
-    getAllCategories: function () {
-      this.$http.get(REQUEST_CATEGORIES_END_POINT).then(response => {
-        this.categories = response.body
-        this.getAllImages()
-      })
-    },
-
-    getAllImages: function () {
-      for (var i = 0; i < this.categories.length; i++) {
-        this.$http.get(REQUEST_CATEGORIES_END_POINT + SLASH + this.categories[i][ID_KEY] + SLASH + IMAGES_KEY).then(response => {
-          this.imageGroups.push(response.body)
-          this.loadedCount++
-          if (this.loadedCount === Object.keys(this.categories).length) {
-            this.loading = false
-          }
-        })
-      }
-    }
-
   },
   components: {
-    cube: Cube
+    PhotoFrame
   },
   metaInfo: {
     title: 'World In Square - Gallery'
@@ -102,6 +101,68 @@ export default {
 
   img {
     width: 500px;
+  }
+}
+
+.china {
+  margin-top: 60px;
+}
+
+.chongqing {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  .chongqing-view-wrapper {
+    width: 60%;
+    padding-right: 5px;
+
+    .chongqing-view {
+      padding: 20px 40px;
+      overflow: hidden;
+      background-color: #fff;
+      border-radius: 30px;
+      height: 400px;
+
+      .views-postcard {
+        position: relative;
+        margin-left: -250px;
+        margin-top: -40px;
+        transform: rotate(12deg);
+        display: block;
+      }
+
+      .chongqing-view-des-wrapper {
+        position: relative;
+        margin-left: 250px;
+        margin-top: -150px;
+      }
+    }
+  }
+
+  .school-wrapper {
+    width: 40%;
+    padding-left: 5px;
+
+    .school {
+      padding: 20px 40px;
+      overflow: hidden;
+      background-color: #fff;
+      border-radius: 30px;
+      height: 400px;
+
+      .friends-postcard {
+        position: relative;
+        margin-left: 54px;
+        margin-top: 190px;
+        transform: rotate(-4deg);
+      }
+
+      .chongqing-friends-des-wrapper {
+        position: relative;
+        margin-top: -470px;
+      }
+    }
   }
 }
 
